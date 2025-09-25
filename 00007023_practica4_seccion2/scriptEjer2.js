@@ -227,8 +227,22 @@ while(edad <=18){
     edad = prompt("Que edad tienes?", 0);
 }
 
+/*for
+    for (inicio; condicion; incremento) {
+        ejecutar este codigo
+    }
+    */
 
-/* for
+for(let i = 0; i < 10; i += 1){
+    console.log(i);
+}
 
+//a veces nos olvidamos de que tambien existe la resta
+for(let i = 0; i < 10; i -= 1){
+    console.log(i);
+}
 
-
+//Las expresiones en for no tienen por que ser individuales
+for(let i = 10, j = 0; i>j; i -=1){
+    console.log(i, j);
+}

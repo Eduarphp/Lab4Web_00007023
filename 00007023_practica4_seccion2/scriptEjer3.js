@@ -35,7 +35,7 @@ function calcularDiasCrecimiento(velocidadCrecimiento, velocidadDecrecimiento, a
     let altura = 0;
     let dias = 0;
 
-    while (altura> alturaDeseada) {
+    while (altura < alturaDeseada) {
         altura += velocidadCrecimiento;
         dias++;
         if (altura >= alturaDeseada) {return dias;}
@@ -43,3 +43,8 @@ function calcularDiasCrecimiento(velocidadCrecimiento, velocidadDecrecimiento, a
     }
     return dias;
 }
+
+//comprobaciond de la funcion anterior
+console.log(calcularDiasCrecimiento(3, 1, 10));  // debería dar 5 días
+console.log(calcularDiasCrecimiento(5, 2, 20));  // debería dar 6 días
+console.log(calcularDiasCrecimiento(2, 1, 5));   // debería dar 4 días
